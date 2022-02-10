@@ -14,10 +14,23 @@ public class Tester {
 
         mal.insertItem(20, 6);
         mal.removeItem(10);
+        System.out.println(String.format("The item is at index: %s", mal.findItem(12)));
+        mal.updateItem(20, 2);
 
         for(int x = 0; x < mal.getSize(); x++) {
             System.out.println(mal.getItem(x));
         }
+
+        MyArrayList mal2 = new MyArrayList();
+        mal2.addItem(6);
+        MyArrayList mal3 = new MyArrayList();
+        mal3.addItem(60);
+        for(int i : mal.findAllInstances(20)) {
+            System.out.println(String.format("Found at index: %s", i));
+        }
+        System.out.println(String.format("Mal2 subset of mal: %s", mal2.isSubsetOf(mal)));
+        System.out.println(String.format("Mal3 subset of mal: %s", mal3.isSubsetOf(mal)));
+
 
         MyDoubleLinkList mdll = new MyDoubleLinkList();
 
