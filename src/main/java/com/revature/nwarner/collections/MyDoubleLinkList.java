@@ -2,17 +2,17 @@ package com.revature.nwarner.collections;
 
 
 
-public class MyDoubleLinkList {
+public class MyDoubleLinkList <T> {
 
-    private MyDoubleLinkListNode head;
-    private MyDoubleLinkListNode tail;
+    private MyDoubleLinkListNode <T> head;
+    private MyDoubleLinkListNode <T> tail;
 
-    private class MyDoubleLinkListNode {
-        private Object myValue;
-        private MyDoubleLinkListNode previousNode;
-        private MyDoubleLinkListNode nextNode;
+    private class MyDoubleLinkListNode <T> {
+        private T myValue;
+        private MyDoubleLinkListNode <T> previousNode;
+        private MyDoubleLinkListNode <T> nextNode;
 
-        private MyDoubleLinkListNode(Object value, MyDoubleLinkListNode previous, MyDoubleLinkListNode next) {
+        private MyDoubleLinkListNode(T value, MyDoubleLinkListNode <T> previous, MyDoubleLinkListNode <T> next) {
             this.myValue = value;
             this.previousNode = previous;
             this.nextNode = next;
@@ -21,10 +21,10 @@ public class MyDoubleLinkList {
 
     /**
      * Inserts an object at the front of the linked list.
-     * @param o The object to be inserted.
+     * @param t The object to be inserted.
      */
-    public void push(Object o) {
-        MyDoubleLinkListNode node = new MyDoubleLinkListNode(o, null, head);
+    public void push(T t) {
+        MyDoubleLinkListNode node = new MyDoubleLinkListNode(t, null, head);
         if (head != null) {
             head.previousNode = node;
         }
@@ -32,15 +32,25 @@ public class MyDoubleLinkList {
         if (tail == null) {
             tail = node;
         }
+    }
+
+    public T pop() {
+        if(head != null) {
+            T value = head.myValue;
+            head = head.nextNode;
+            return value;
+        } else {
+            return null;
+        }
 
     }
 
     /**
      * Inserts an object at the back of the linked list.
-     * @param o The object to be inserted.
+     * @param t The object to be inserted.
      */
-    public void add(Object o) {
-        MyDoubleLinkListNode node = new MyDoubleLinkListNode(o, tail, null);
+    public void add(T t) {
+        MyDoubleLinkListNode node = new MyDoubleLinkListNode(t, tail, null);
         if (tail != null) {
             tail.nextNode = node;
         }
@@ -48,6 +58,16 @@ public class MyDoubleLinkList {
         tail = node;
         if (head == null) {
             head = node;
+        }
+    }
+
+    public T remove() {
+        if(tail!=null) {
+            T value = tail.myValue;
+            tail = tail.previousNode;
+            return value;
+        } else {
+            return null;
         }
     }
 

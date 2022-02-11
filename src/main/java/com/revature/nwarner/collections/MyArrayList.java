@@ -1,11 +1,11 @@
 package com.revature.nwarner.collections;
 
-public class MyArrayList {
-    private Object[] collection;
+public class MyArrayList <T> {
+    private T[] collection;
     private int size;
 
     public MyArrayList() {
-        collection = new Object[10];
+        collection = (T[]) new Object[10];
         size = 0;
     }
 
@@ -15,22 +15,23 @@ public class MyArrayList {
 
     /**
      * Adds an item to the end of the ArrayList.
-     * @param o The object to the added to the ArrayList.
+     * @param t The object to the added to the ArrayList.
      */
-    public void addItem(Object o) {
+    public void addItem(T t) {
         if(isArrayFull()) {
             increaseArraySize();
         }
-        collection[size] = o;
+        collection[size] = t;
         size++;
     }
 
     /**
      * Inserts an object in the ArrayList at the position provided.
-     * @param o The object to be inserted
+     * @param t The object to be inserted
      * @param index The index where the object will be inserted
+     * @return Boolean whether the insert was successful or not.
      */
-    public void insertItem(Object o, int index) {
+    public Boolean insertItem(T t, int index) {
         if(isArrayFull()) {
             increaseArraySize();
         }
@@ -38,8 +39,11 @@ public class MyArrayList {
             for(int i = size - 1; i >= index; i--) {
                 collection[i + 1] = collection[i];
             }
-            collection[index] = o;
+            collection[index] = t;
             size++;
+            return true;
+        } else {
+            return false;
         }
 
     }
@@ -50,41 +54,49 @@ public class MyArrayList {
      * @param index The index of the object to be returned
      * @return The object at the index or null if the index is invalid.
      */
-    public Object getItem(int index) {
+    public T getItem(int index) {
         if(isIndexValid(index)) {
             return collection[index];
         }
         return null;
     }
 
-    public void updateItem(Object o, int index) {
+    public Boolean updateItem(T t, int index) {
         if(isIndexValid(index)) {
-            collection[index] = o;
+            collection[index] = t;
+            return true;
+        } else {
+            return false;
         }
     }
 
-    public int findItem(Object o) {
+    public int findItem(T t) {
         for(int x = 0; x < size; x++) {
-            if (collection[x].equals(o)) {
+            if (collection[x].equals(t)) {
                 return x;
             }
         }
         return -1;
     }
 
-    public int[] findAllInstances(Object o) {
+    public int[] findAllInstances(T t) {
         String indexString = "";
         for(int x = 0; x < size; x++) {
-            if (collection[x].equals(o)) {
+            if (collection[x].equals(t)) {
                 indexString += String.format("%s,", x);
             }
         }
-        String[] stringArray = indexString.split(",");
-        int[] indexes = new int[stringArray.length];
-        for(int x = 0; x < stringArray.length; x++) {
-            indexes[x] = Integer.parseInt(stringArray[x]);
+        if(indexString != "") {
+            String[] stringArray = indexString.split(",");
+            int[] indexes = new int[stringArray.length];
+            for(int x = 0; x < stringArray.length; x++) {
+                indexes[x] = Integer.parseInt(stringArray[x]);
+            }
+            return indexes;
+        } else {
+            return null;
         }
-        return indexes;
+
     }
 
     public Boolean isSubsetOf(MyArrayList mal) {
@@ -97,6 +109,7 @@ public class MyArrayList {
                 if (collection[x].equals(tempArray[y])) {
                     foundCurrentItem = true;
                     tempArray[y] = null;
+                    break;
                 }
             }
             if (!foundCurrentItem) return false;
@@ -112,13 +125,17 @@ public class MyArrayList {
     /**
      * Removes the object at the given index
      * @param index The index of the object to remove.
+     * @return Boolean whether the remove was successful or not.
      */
-    public void removeItem(int index) {
+    public Boolean removeItem(int index) {
         if(isIndexValid(index)) {
             for(int i = index; i < size; i++) {
                 collection[i] = collection[i + 1];
             }
             size--;
+            return true;
+        } else {
+            return false;
         }
     }
 
@@ -139,7 +156,7 @@ public class MyArrayList {
      * Increases the size of the array by 10 if the array is full.
      */
     private void increaseArraySize() {
-        Object[] tempArray = new Object[size + 10];
+        T[] tempArray = (T[]) new Object[size + 10];
         for(int index = 0; index < size; index++) {
             tempArray[index] = collection[index];
         }

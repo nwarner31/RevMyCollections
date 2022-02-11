@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="MyArrayListTest" time="0.05" tests="19" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="E:\Programming\Revature\Class\MyArrayList\target\test-classes;E:\Programming\Revature\Class\MyArrayList\target\classes;C:\Users\Nathan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\Nathan\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\Nathan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Nathan\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Nathan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Nathan\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="E:\Programming\Java\Java8\jdk1.8.0_321\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Nathan\AppData\Local\Temp\surefire5768381674027114018\surefirebooter6609037858723628752.jar C:\Users\Nathan\AppData\Local\Temp\surefire5768381674027114018 2022-02-10T19-18-02_107-jvmRun1 surefire5848181490071016911tmp surefire_01765401413350884596tmp"/>
+    <property name="surefire.test.class.path" value="E:\Programming\Revature\Class\MyArrayList\target\test-classes;E:\Programming\Revature\Class\MyArrayList\target\classes;C:\Users\Nathan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\Nathan\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\Nathan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Nathan\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Nathan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Nathan\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Nathan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="E:\Programming\Java\Java8\jdk1.8.0_321\jre"/>
+    <property name="basedir" value="E:\Programming\Revature\Class\MyArrayList"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Nathan\AppData\Local\Temp\surefire5768381674027114018\surefirebooter6609037858723628752.jar"/>
+    <property name="sun.boot.class.path" value="E:\Programming\Java\Java8\jdk1.8.0_321\jre\lib\resources.jar;E:\Programming\Java\Java8\jdk1.8.0_321\jre\lib\rt.jar;E:\Programming\Java\Java8\jdk1.8.0_321\jre\lib\sunrsasign.jar;E:\Programming\Java\Java8\jdk1.8.0_321\jre\lib\jsse.jar;E:\Programming\Java\Java8\jdk1.8.0_321\jre\lib\jce.jar;E:\Programming\Java\Java8\jdk1.8.0_321\jre\lib\charsets.jar;E:\Programming\Java\Java8\jdk1.8.0_321\jre\lib\jfr.jar;E:\Programming\Java\Java8\jdk1.8.0_321\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_321-b07"/>
+    <property name="user.name" value="Nathan"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="E:\Programming\Java\Java8\jdk1.8.0_321\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Nathan\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Nathan\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_321"/>
+    <property name="user.dir" value="E:\Programming\Revature\Class\MyArrayList"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="E:\Programming\Java\Java8\jdk1.8.0_321\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;E:\Programming\Oracle11g\app\oracle\product\11.2.0\server\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\dotnet\;C:\HashiCorp\Vagrant\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\Programming\node\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\dotnet\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;E:\Programming\apache-maven-3.8.4\bin;C:\Program Files\Git\cmd;C:\Program Files\GitHub CLI\;C:\Users\Nathan\.dnx\bin;C:\Users\Nathan\AppData\Local\Microsoft\WindowsApps;C:\Users\Nathan\AppData\Roaming\npm;E:\Programming\Microsoft VS Code\bin;C:\Users\Nathan\AppData\Local\atom\bin;E:\Programming\apache-maven-3.8.4\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.321-b07"/>
+    <property name="java.ext.dirs" value="E:\Programming\Java\Java8\jdk1.8.0_321\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="isSubsetFailArrayLarger" classname="MyArrayListTest" time="0.023"/>
+  <testcase name="doesFindInteger" classname="MyArrayListTest" time="0.003"/>
+  <testcase name="isSubsetFailValues" classname="MyArrayListTest" time="0.001"/>
+  <testcase name="doesNotFindInvalidIndex" classname="MyArrayListTest" time="0.001"/>
+  <testcase name="doesNotFindAllForEntryNotInArray" classname="MyArrayListTest" time="0.001"/>
+  <testcase name="removeSuccess" classname="MyArrayListTest" time="0.001"/>
+  <testcase name="insertSuccessful" classname="MyArrayListTest" time="0"/>
+  <testcase name="isEqualsFalseDifferentNumberValues" classname="MyArrayListTest" time="0"/>
+  <testcase name="doesUpdateValidIndex" classname="MyArrayListTest" time="0"/>
+  <testcase name="insertFailInvalidIndex" classname="MyArrayListTest" time="0.001"/>
+  <testcase name="doesNotContainInteger" classname="MyArrayListTest" time="0.001"/>
+  <testcase name="isSubsetTrue" classname="MyArrayListTest" time="0"/>
+  <testcase name="removeFailInvalidIndex" classname="MyArrayListTest" time="0"/>
+  <testcase name="containsOneAddedInteger" classname="MyArrayListTest" time="0.001"/>
+  <testcase name="doesFindTwoIndicesForFindAll" classname="MyArrayListTest" time="0"/>
+  <testcase name="isEqualsFalseDifferentValues" classname="MyArrayListTest" time="0.001"/>
+  <testcase name="doesNotUpdateInvalidIndex" classname="MyArrayListTest" time="0.001"/>
+  <testcase name="isEqualsFalseDifferentNumberSameValues" classname="MyArrayListTest" time="0"/>
+  <testcase name="isEqualTrue" classname="MyArrayListTest" time="0"/>
+</testsuite>
